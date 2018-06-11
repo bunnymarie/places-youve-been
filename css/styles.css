@@ -1,0 +1,12 @@
+#travelFull {
+  display: none;
+}
+
+.TravelData {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.TravelData:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places you've been.</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1></h1>
+          <div class="form-group">
+            <form id="travelForm">
+              <label for="newTitle">Title/Nickname:</label>
+              <input type="text" class="form-control" id="newTitle" />
+
+              <label for="newLocation">City, Country:</label>
+              <input type="text" class="form-control" id="newLocation" />
+
+              <label for="newDate">Date Visited:</label>
+              <input id="newDate" class="form-control" type="date" />
+
+              <p>Would you return?</p>
+              <label>
+                <input type="radio" name="newReturn" value="yes" />
+                Yes!
+              </label>
+              <label>
+                <input type="radio" name="newReturn" value="no" />
+                No!
+              </label>
+
+              <select class="form-control" id="newScore">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+
+              <label for="newNotes">Notes:</label>
+              <input type="text" class="form-control" id="newNotes" />
+
+              <button type="submit" class="btn btn-primary">Add!</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul id="travelLabels">
+
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="travelFull">
+            <h2 class="title"></h2>
+            <p class="title"></p>
+            <p class="location"></p>
+            <p class="date"></p>
+            <p class="returnVal"></p>
+            <p class="score"></p>
+            <p class="notes"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
