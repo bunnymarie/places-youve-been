@@ -5,13 +5,21 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/starscripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
     <title>Places you've been.</title>
   </head>
   <body>
+
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1></h1>
+        <div class="col-md-12">
+          <h1><img src="img/palmtree.gif" width="100px"><img src="img/banana.gif" width="150px">The Places We've Been!<img src="img/banana.gif" width="150px"><img src="img/palmtree.gif" width="100px"></h1>
+          <img src="img/plane.gif">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-mirror">
           <div class="form-group">
             <form id="travelForm">
               <label for="newTitle">Title/Nickname:</label>
@@ -32,7 +40,9 @@
                 <input type="radio" name="newReturn" value="no" />
                 No!
               </label>
-
+              <p>
+                Please rate your visit on a scale of 1 to 10.
+              </p>
               <select class="form-control" id="newScore">
                 <option>1</option>
                 <option>2</option>
@@ -53,22 +63,35 @@
             </form>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-mirror">
+          <img src="img/found.gif" width="200px">
           <ul id="travelLabels">
 
           </ul>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-mirror">
           <div id="travelFull">
             <h2 class="title"></h2>
-            <p class="title"></p>
-            <p class="location"></p>
-            <p class="date"></p>
-            <p class="returnVal"></p>
-            <p class="score"></p>
-            <p class="notes"></p>
+            <p>
+              Title: <span class="title"></span>
+            </p>
+            <p>
+              Location: <span class="location"></span>
+            </p>
+            <p>
+              Date Traveled: <span class="date"></span>
+            </p>
+            <p>
+              Would you return?: <span class="returnVal"></span>
+            </p>
+            <p>
+              How did you score it on a rate of 1-10?: <span class="score"></span>
+            </p>
+            <p>
+              Notes: <span class="notes"></span>
+            </p>
           </div>
         </div>
       </div>

@@ -1,12 +1,34 @@
+body{
+  background-image: url("../img/background.png");
+  background-size: cover;
+  text-align: center;
+  color: #000000;
+  font-size: 28px;
+}
+
+h1{
+  font-family: 'Eater', cursive;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #E3085D;
+  font-size: 40px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.col-mirror{
+  background-image: url('../img/mirror.jpg');
+}
+
 #travelFull {
   display: none;
 }
 
 .TravelData {
   cursor: pointer;
-  color: #0088cc;
+  color: 	#5de308;
 }
 
 .TravelData:hover {
   text-decoration: underline;
+  color: 	#085de3;
 }
